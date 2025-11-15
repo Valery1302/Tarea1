@@ -1,0 +1,12 @@
+Explicación del orden de datos en las estructuras
+
+Se usaron dos estructuras: Usuario y Producto.
+
+En "Usuario", todos los campos son cadenas (char[]) y se ordenaron según su uso lógico:
+usuario -> clave -> nombre.
+
+En "Producto", se ordenaron para optimizar la memoria:
+primero las cadenas (codigo, nombre), luego el entero (cantidad) y al final los flotantes (costo, precio).
+Este orden reduce el padding interno y mejora la alineación de datos en memoria.
+
+Así se logra un acceso más rápido y eficiente al trabajar con archivos y memoria dinámica.
